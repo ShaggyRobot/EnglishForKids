@@ -1,0 +1,38 @@
+.app__footer {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  pointer-events: none;
+
+  & > * {
+    pointer-events: auto;
+  }
+}
+
+.app__logo-img {
+  height: 50px;
+  margin: 10px;
+}
+
+.app__logo-link {
+  position: relative;
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.date {
+  position: absolute;
+  bottom: 36px;
+  right: 79px;
+}
